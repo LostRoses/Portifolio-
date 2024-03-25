@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Meu Portfólio</title>
+</head>
+
+<body>
+    <header>
+        <h1>Meu Portfólio</h1>
+    </header>
+
+    <nav>
+
+    </nav>
+
+    <section id="sobre-mim">
+        <h2 class="panel-title">Sobre Mim</h2>
+        <img src="./assets/eu-imagem.jpeg" alt="Descrição da imagem">
+        <p>Olá! Eu sou João Martins.
+            Tenho 22 anos, sou apaixonado por escrever, 
+            a forma como podermos moldar nossas nuases é bastante fascinante.
+             Gosto muito de animais e sou bastante cominucativo. 
+        </p>
+    </section>
+
+     <div class="toggle-container">
+        <h2>Projetos</h2>
+        <button onclick="toggleBlock('projetos')" class="accordion" id="projetos-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                viewBox="0 0 16 16">
+
+                <path fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+            </svg>
+        </button>
+    </div> 
+
+    <section class="panel" id="projetos" style="display: none;">
+        <div class="projects-div">
+            <article>
+                <h3 class="panel-title">Desenvolvimento de jogo</h3>
+                <img src="./assets/images.jpeg" alt="Descrição da imagem">
+                <table>
+                    <caption>Jogo</caption>
+                    <tr>
+                        <td>Vila</td>
+                        <td>Montros</td>
+                        <td>Pesca</td>
+                    </tr>
+                    <tr>
+                        <td>Armas</td>
+                        <td>Unity</td>
+                        <th>Andamento</th>
+                    </tr>
+                </table>
+            </article>
+            <article>
+                <h3 class="panel-title">Desenvolvimento Portfólio</h3>
+                <img src="./assets/portifolio.jpeg" alt="Descrição da imagem">
+                <table>
+                    <caption>Portfólio</caption>
+                    <tr>
+                        <td>Web</td>
+                        <td>Portfólio</td>
+                        <td>html</td>
+                    </tr>
+                    <tr>
+                        <td>css</td>
+                        <td>javascript</td>
+                        <th>Concluído</th>
+                    </tr>
+    
+                </table>
+            </article>
+            <article>
+                <h3 class="panel-title">Como criar um jogo:</h3>
+                <iframe width="360" height="200" src="https://www.youtube.com/embed/Xa28qZibXX8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+        </div>
+    </section>
+
+    <div class="toggle-container">
+        <h2>Contato</h2>
+        <button onclick="toggleBlock('contato')" class="accordion" id="contato-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                viewBox="0 0 16 16">
+                
+                <path fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+            </svg>
+        </button>
+    </div>
+
+    <section class="panel" id="contato" style="display: none;">
+        <div>
+            <h3 class="panel-title">Informações de Contato</h3>
+            <p>Número: 81 9 99004886</p>
+            <p>E-mail: joaoataidebisneto@gmail.com</p>
+    
+            <h3>Envie uma mensagem</h3>
+            <form action="enviar.php" method="post">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <br>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>© 2024 Meu Portfólio</p>
+    </footer>
+</body>
+
+</html>

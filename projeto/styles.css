@@ -1,0 +1,123 @@
+:root{
+    --primary-color: #023047;
+    --secondary-color: #1babc4;
+    --primary-title-color: #ffb032;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+section {
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    display: grid;
+    place-items: center;
+}
+
+img {
+    border-radius: 8%;
+    width: 250px;
+    height: 250px;
+}
+
+h1, h2{
+   color: var(--primary-title-color);
+}
+
+
+form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    color: #FFFFFF;
+}
+
+.toggle-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 3rem 0;
+}
+
+.toggle-container > button{
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--primary-title-color);
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease-out 1s;
+}
+
+.panel-title{
+    color:#ffbc65
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color:  var(--secondary-color);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+}
+
+.panel > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel > .projects-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 15px;
+  }
+  
+  th {
+    background-color: #fedb81e0;
+  }
+  caption {
+    width: 100%;
+  }
+  footer {
+    color: var(--primary-title-color);
+  }
